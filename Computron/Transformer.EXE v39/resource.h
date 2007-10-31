@@ -1,0 +1,124 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by transformer.rc
+//
+#define IDD_TRANSFORMER_DIALOG          102
+#define IDS_STRING103                   103
+#define IDS_STRING104                   104
+#define IDS_STRING105                   105
+#define IDS_STRING106                   106
+#define IDS_STRING107                   107
+#define IDS_STRING108                   108
+#define IDS_STRING109                   109
+#define IDS_STRING110                   110
+#define IDS_STRING111                   111
+#define IDS_STRING112                   112
+#define IDS_STRING113                   113
+#define IDS_STRING114                   114
+#define IDS_STRING115                   115
+#define IDR_MAINFRAME                   128
+#define image_AutoBotLogo               134
+#define instruc_InsertNumEBox           1000
+#define warn_AudioCBox                  1001
+#define warn_AudioEBox                  1002
+#define monitor_HealthCBox              1003
+#define monitor_ManaCBox                1004
+#define warn_JumpCBox                   1005
+#define warn_JumpEBoxA                  1006
+#define warn_JumpEBoxB                  1007
+#define warn_LogCBox                    1008
+#define warn_JalCBox                    1009
+#define safety_SensusCheckCBox          1010
+#define instruc_CommentEBox             1011
+#define misc_MiscEBoxA                  1012
+#define safety_SurfCheckCBox            1013
+#define safety_SurfMinEBox              1014
+#define safety_SurfMaxEBox              1015
+#define list_SaveButton                 1016
+#define list_DisplayScript              1017
+#define list_InsertButton               1018
+#define list_LoadButton                 1019
+#define list_MvDownButton               1020
+#define list_MvUpButton                 1021
+#define list_DeleteButton               1022
+#define instruc_SimKeyCBox              1023
+#define monitor_HealthPercentEBox       1024
+#define warn_ScreenshotCBox             1025
+#define list_NewButton                  1026
+#define instruc_ClearReturn             1027
+#define list_BeginButton                1028
+#define instruc_PauseAfterEBoxA         1029
+#define instruc_PauseAfterEBoxB         1030
+#define safety_SurfCheckconCBox         1031
+#define screen_sizeA                    1032
+#define instruc_SimMouseCBox            1033
+#define instruc_SimMouseEBoxA           1034
+#define instruc_SimMouseEBoxB           1035
+#define instruc_SpecialCBox             1036
+#define safety_CoordCheckCBox           1037
+#define screen_sizeB                    1038
+#define timeLow                         1039
+#define safety_CoordCheckEBoxA          1039
+#define timeHigh                        1040
+#define safety_CoordCheckEBoxB          1040
+#define timeLow2                        1041
+#define list_CopyButton                 1041
+#define timeLow3                        1042
+#define misc_MiscEBoxC                  1042
+#define instruc_TimedUseEBoxA           1042
+#define timeLow4                        1043
+#define misc_MiscEBoxB                  1043
+#define instruc_TimedUseEBoxB           1043
+#define timeLow5                        1044
+#define safety_CoordCheckconCBox        1044
+#define timeLow6                        1045
+#define safety_MPWaitCBox               1045
+#define instruc_SimKeyComBox            1046
+#define safety_MPWaitCBox2              1047
+#define safety_HPWaitCBox               1047
+#define monitor_HealthComBox            1048
+#define misc_useMisc                    1049
+#define instruc_useTimedUseCBox         1049
+#define misc_MiscEBoxD                  1050
+#define instruc_notFirstTimedUseCBox    1050
+#define misc_MiscEBoxE                  1051
+#define instruc_SendPacketCBox          1051
+#define misc_MiscEBoxF                  1052
+#define monitor_ManaPercentEBox         1053
+#define monitor_ManaComBox              1054
+#define hide_comment                    1056
+#define time_minimumCBox                1057
+#define time_maximumCBox                1058
+#define time_randomCBox                 1059
+#define warn_AudioBrowseButton          1061
+#define list_SaveNameComBox             1062
+#define warn_AudioComBox                1063
+#define AdapterComBox                   1064
+#define instruc_SendPacketBrowseButton  1065
+#define instruc_SendPackeTComBox        1066
+#define IDC_CHECK1                      1067
+#define DumbDown                        1067
+#define safety_SurfMinSTATIC            1068
+#define safety_SurfMaxSTATIC            1069
+#define safety_CoordCheckSTATIC         1070
+#define warn_JumpSTATIC                 1071
+#define instruc_TimedUseSTATIC          1072
+#define instruc_PauseAfterSTATICB       1073
+#define instruc_PauseAfterSTATICA       1074
+#define instruc_CommentSTATIC           1075
+#define instruc_SimMouseSTATIC          1076
+#define instruc_InsertNumSTATIC         1077
+#define monitor_ManaPercentSTATIC       1078
+#define monitor_HealthPercentSTATIC     1079
+#define screen_sizeSTATIC               1080
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        140
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1081
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

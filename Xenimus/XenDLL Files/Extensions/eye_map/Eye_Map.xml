@@ -1,0 +1,20 @@
+<Config version="1">
+	<item name="Hide/Show Using DIK_[Key]">DIK_M</item>
+	<item name="MenuItemIO">false</item>
+	<item name="DisplayMoveAlways">true</item>
+	<item name="DisplaySizeScale">100.000000</item>
+	<item name="MapButtonText[0]">Main</item>
+	<item name="MapFile[0] Filename">xenmap0.bmp</item>
+	<item name="Map[0] File2Game X">6.289063</item>
+	<item name="Map[0] File2Game Y">6.289063</item>
+	<item name="MapButtonText[1]">screwed</item>
+	<item name="Map[1] Filename">HGooey Files/XenDLL/Extensions/Eye_Map/server_map.jpg</item>
+	<item name="Map[1] File2Game X">1.56</item>
+	<item name="Map[1] File2Game Y">1.571</item>
+	<item name="MapButtonText[2]">3</item>
+	<item name="Map[2] Filename">HGooey Files/XenDLL/Extensions/Eye_Map/Eye_Map.bmp</item>
+	<item name="Map[2] File2Game X">0.000000</item>
+	<item name="Map[2] File2Game Y">0.000000</item>
+	<item name="DisplayX">766.719971</item>
+	<item name="DisplayY">570.880005</item>
+</Config>

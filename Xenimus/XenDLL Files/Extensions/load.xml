@@ -1,0 +1,9 @@
+<loader version="1">
+	<dll>fire_exit</dll>
+	<dll>sshot_saver</dll>
+	<dll>frames_per_sec</dll>
+	<dll>eye_map</dll>
+	<dll>safe_typer</dll>
+	<dll>night_vision</dll>
+	<dll>model_changer</dll>
+</loader>

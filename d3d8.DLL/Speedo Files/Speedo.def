@@ -1,0 +1,7 @@
+LIBRARY d3d8
+
+EXPORTS
+	ValidatePixelShader = NewValidatePixelShader @1
+	ValidateVertexShader = NewValidateVertexShader @2
+	DebugSetMute = NewDebugSetMute @3
+	Direct3DCreate8 = NewDirect3DCreate8 @4

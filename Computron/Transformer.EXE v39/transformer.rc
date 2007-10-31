@@ -1,0 +1,1047 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\transformer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRANSFORMER_DIALOG DIALOGEX 0, 0, 567, 442
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Transformer | Computron"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,32,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,51,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,68,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,100,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,132,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,181,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,238,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,268,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,6,387,117,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,129,192,181,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,129,257,181,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,129,289,181,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT,129,334,181,1
+    GROUPBOX        "Command ( Each Instruction )",IDC_STATIC,6,7,117,307,
+                    BS_CENTER | BS_FLAT | WS_TABSTOP
+    CONTROL         "Use as ""special"" instruction",instruc_SpecialCBox,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,19,103,10
+    LTEXT           "Instruction number :",instruc_InsertNumSTATIC,15,36,63,
+                    12,SS_CENTERIMAGE | NOT WS_GROUP | WS_TABSTOP
+    EDITTEXT        instruc_InsertNumEBox,81,36,31,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Clear Return Stack",instruc_ClearReturn,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,55,76,10
+    CONTROL         "Simulate keystroke :",instruc_SimKeyCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,72,79,10
+    COMBOBOX        instruc_SimKeyComBox,25,85,88,203,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Simulate mouse click at :",instruc_SimMouseCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,104,94,10
+    EDITTEXT        instruc_SimMouseEBoxA,25,117,36,12,ES_AUTOHSCROLL
+    CTEXT           ",",instruc_SimMouseSTATIC,65,119,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        instruc_SimMouseEBoxB,77,117,36,12,ES_AUTOHSCROLL
+    CONTROL         "Send Packet :",instruc_SendPacketCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,136,61,10
+    COMBOBOX        instruc_SendPackeTComBox,25,150,88,136,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Browse Folder",instruc_SendPacketBrowseButton,25,166,88,
+                    12
+    LTEXT           "Pause length after simulation :",
+                    instruc_PauseAfterSTATICA,15,185,95,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        instruc_PauseAfterEBoxA,25,197,36,12,ES_AUTOHSCROLL
+    CTEXT           "to",instruc_PauseAfterSTATICB,65,199,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        instruc_PauseAfterEBoxB,77,197,36,12,ES_AUTOHSCROLL
+    CONTROL         "Wait for 100% MP",safety_MPWaitCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,211,73,10
+    CONTROL         "Wait for 100% HP",safety_HPWaitCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,225,72,10
+    LTEXT           "Instruction comment :",instruc_CommentSTATIC,15,242,68,
+                    8,NOT WS_GROUP | WS_TABSTOP
+    EDITTEXT        instruc_CommentEBox,25,253,88,12,ES_AUTOHSCROLL
+    CONTROL         "Use only every __ seconds :",instruc_useTimedUseCBox,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,272,105,10
+    EDITTEXT        instruc_TimedUseEBoxA,25,285,36,12,ES_AUTOHSCROLL
+    CTEXT           "to",instruc_TimedUseSTATIC,65,288,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        instruc_TimedUseEBoxB,77,285,36,12,ES_AUTOHSCROLL
+    CONTROL         "Ignore first use",instruc_notFirstTimedUseCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,299,62,10
+    CONTROL         "Use surf check",safety_SurfCheckCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,329,64,10
+    CONTROL         "Continuous surf check",safety_SurfCheckconCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,342,87,10
+    LTEXT           "Surf min :",safety_SurfMinSTATIC,25,355,30,12,
+                    SS_CENTERIMAGE | NOT WS_GROUP | WS_TABSTOP
+    EDITTEXT        safety_SurfMinEBox,66,355,47,12,ES_AUTOHSCROLL
+    LTEXT           "Surf max :",safety_SurfMaxSTATIC,25,372,32,12,
+                    SS_CENTERIMAGE | NOT WS_GROUP | WS_TABSTOP
+    EDITTEXT        safety_SurfMaxEBox,66,372,47,12,ES_AUTOHSCROLL
+    CONTROL         "Check char coordinates",safety_CoordCheckCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,391,91,10
+    CONTROL         "Continuous coord check",safety_CoordCheckconCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,404,93,10
+    EDITTEXT        safety_CoordCheckEBoxA,25,417,36,12,ES_AUTOHSCROLL
+    CTEXT           ",",safety_CoordCheckSTATIC,65,419,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        safety_CoordCheckEBoxB,77,417,36,12,ES_AUTOHSCROLL
+    GROUPBOX        "Menu",IDC_STATIC,129,7,181,100,BS_CENTER | BS_FLAT | 
+                    WS_TABSTOP
+    PUSHBUTTON      "EXIT",IDOK,148,19,71,17
+    PUSHBUTTON      "NEW SCRIPT",list_BeginButton,221,19,71,17
+    PUSHBUTTON      "LOAD SCRIPT",list_LoadButton,148,37,71,17
+    PUSHBUTTON      "SAVE SCRIPT",list_SaveButton,221,37,71,17
+    COMBOBOX        list_SaveNameComBox,149,56,143,295,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New instruction",list_NewButton,148,75,71,24
+    DEFPUSHBUTTON   "Save instruction",list_InsertButton,221,75,71,24
+    GROUPBOX        "Screen Size ( Entire Script )",IDC_STATIC,129,110,181,
+                    35,BS_CENTER | BS_FLAT | WS_TABSTOP
+    EDITTEXT        screen_sizeA,175,125,36,12,ES_AUTOHSCROLL
+    CTEXT           "x",screen_sizeSTATIC,215,127,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        screen_sizeB,227,125,36,12,ES_AUTOHSCROLL
+    GROUPBOX        "Monitor Health / Mana ( Entire Script )",IDC_STATIC,129,
+                    148,181,81,BS_CENTER | BS_FLAT | WS_TABSTOP
+    CONTROL         "Use key to heal if HP is below",monitor_HealthCBox,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,162,110,12
+    EDITTEXT        monitor_HealthPercentEBox,254,162,36,12,ES_AUTOHSCROLL
+    LTEXT           "%",monitor_HealthPercentSTATIC,294,164,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    COMBOBOX        monitor_HealthComBox,150,177,88,125,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use key to heal if MP is below",monitor_ManaCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,196,110,12
+    EDITTEXT        monitor_ManaPercentEBox,254,196,36,12,ES_AUTOHSCROLL
+    LTEXT           "%",monitor_ManaPercentSTATIC,294,198,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    COMBOBOX        monitor_ManaComBox,150,211,88,125,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Warnings ( Each Instruction )",IDC_STATIC,129,232,181,
+                    120,BS_CENTER | BS_FLAT | WS_TABSTOP
+    CONTROL         "Take screenshot",warn_ScreenshotCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,244,69,10
+    CONTROL         "Play audio warning :",warn_AudioCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,261,79,10
+    COMBOBOX        warn_AudioComBox,150,274,88,136,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Browse",warn_AudioBrowseButton,242,274,60,12
+    CONTROL         "Jump to instruction numbers :",warn_JumpCBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,293,107,10
+    EDITTEXT        warn_JumpEBoxA,150,306,36,12,ES_AUTOHSCROLL
+    CTEXT           "to",warn_JumpSTATIC,190,308,8,8,NOT WS_GROUP | 
+                    WS_TABSTOP
+    EDITTEXT        warn_JumpEBoxB,202,306,36,12,ES_AUTOHSCROLL
+    CONTROL         "Return",warn_JalCBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,321,37,10
+    CONTROL         "Log off",warn_LogCBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,338,38,10
+    GROUPBOX        "Editor Usage",IDC_STATIC,316,7,244,31,BS_CENTER | 
+                    BS_FLAT | WS_TABSTOP
+    CONTROL         "Dumb Down This Editor",DumbDown,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,392,19,91,10
+    ICON            IDR_MAINFRAME,IDC_STATIC,535,14,20,20
+    GROUPBOX        "Network Adapter",IDC_STATIC,316,40,244,42,BS_CENTER | 
+                    BS_FLAT | WS_TABSTOP
+    COMBOBOX        AdapterComBox,326,56,225,136,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "List Display",IDC_STATIC,316,84,244,351,BS_CENTER | 
+                    BS_FLAT | WS_TABSTOP
+    CONTROL         "Minimum Time",time_minimumCBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,325,94,63,10
+    CONTROL         "Maximum Time",time_maximumCBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,325,105,63,10
+    CONTROL         "Random Time",time_randomCBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,325,116,63,10
+    CONTROL         "Hide Comments",hide_comment,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,403,116,65,10
+    LISTBOX         list_DisplayScript,325,131,225,251,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move up",list_MvUpButton,341,387,93,18
+    PUSHBUTTON      "Move down",list_MvDownButton,437,387,93,18
+    PUSHBUTTON      "Copy instruction",list_CopyButton,341,408,93,18
+    PUSHBUTTON      "Delete instruction",list_DeleteButton,437,408,93,18
+    GROUPBOX        "Safety Check ( Each Instruction )",IDC_STATIC,6,317,117,
+                    118,BS_CENTER | BS_FLAT | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "transformer MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "transformer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "transformer.EXE\0"
+            VALUE "ProductName", "transformer Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TRANSFORMER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 560
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 435
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TRANSFORMER_DIALOG DLGINIT
+BEGIN
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0031, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0032, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0033, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0034, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0035, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0036, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0037, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0038, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0039, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0030, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0041, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0042, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0043, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0044, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0045, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0046, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0047, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0048, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0049, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x004a, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x004b, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x004c, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x004d, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x004e, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x004f, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0050, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0051, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0052, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0053, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0054, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0055, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0056, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0057, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0058, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x0059, 
+    instruc_SimKeyComBox, 0x403, 2, 0
+0x005a, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3146, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3246, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3346, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3446, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3546, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3646, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3746, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3846, "\000" 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x3946, "\000" 
+    instruc_SimKeyComBox, 0x403, 4, 0
+0x3146, 0x0030, 
+    instruc_SimKeyComBox, 0x403, 4, 0
+0x3146, 0x0031, 
+    instruc_SimKeyComBox, 0x403, 4, 0
+0x3146, 0x0032, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x5345, 0x4143, 0x4550, "\000" 
+    instruc_SimKeyComBox, 0x403, 4, 0
+0x4154, 0x0042, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 6, 0
+0x494d, 0x554e, 0x0053, 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x5145, 0x4155, 0x534c, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x4142, 0x4b43, "\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x4552, 0x5554, 0x4e52, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 9, 0
+0x424c, 0x4152, 0x4b43, 0x5445, "\000" 
+    instruc_SimKeyComBox, 0x403, 9, 0
+0x4252, 0x4152, 0x4b43, 0x5445, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 9, 0
+0x434c, 0x4e4f, 0x5254, 0x4c4f, "\000" 
+    instruc_SimKeyComBox, 0x403, 9, 0
+0x4352, 0x4e4f, 0x5254, 0x4c4f, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x534c, 0x4948, 0x5446, "\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x5352, 0x4948, 0x5446, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x414c, 0x544c, "\000" 
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x4152, 0x544c, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 10, 0
+0x4553, 0x494d, 0x4f43, 0x4f4c, 0x004e, 
+    instruc_SimKeyComBox, 0x403, 11, 0
+0x5041, 0x534f, 0x5254, 0x504f, 0x4548, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 10, 0
+0x4142, 0x4b43, 0x4c53, 0x5341, 0x0048, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 6, 0
+0x4f43, 0x4d4d, 0x0041, 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x4550, 0x4952, 0x444f, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 6, 0
+0x5053, 0x4341, 0x0045, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x4143, 0x4950, 0x4154, 0x004c, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x4c4d, 0x434f, 0x004b, 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x4353, 0x4f52, 0x4c4c, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x454c, 0x5446, "\000" 
+    instruc_SimKeyComBox, 0x403, 6, 0
+0x4952, 0x4847, 0x0054, 
+    instruc_SimKeyComBox, 0x403, 3, 0
+0x5055, "\000" 
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x4f44, 0x4e57, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 6, 0
+0x4150, 0x5355, 0x0045, 
+    instruc_SimKeyComBox, 0x403, 5, 0
+0x4f48, 0x454d, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x4e49, 0x4553, 0x5452, "\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x4544, 0x454c, 0x4554, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0031, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0032, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0033, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0034, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0035, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0036, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0037, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0038, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0039, 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0030, 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 12, 0
+0x554e, 0x504d, 0x4441, 0x4e45, 0x4554, 0x0052, 
+    instruc_SimKeyComBox, 0x403, 13, 0
+0x554e, 0x504d, 0x4441, 0x5145, 0x4155, 0x534c, "\000" 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x4544, 0x4943, 0x414d, 0x004c, 
+    instruc_SimKeyComBox, 0x403, 4, 0
+0x4441, 0x0044, 
+    instruc_SimKeyComBox, 0x403, 9, 0
+0x5553, 0x5442, 0x4152, 0x5443, "\000" 
+    instruc_SimKeyComBox, 0x403, 9, 0
+0x554d, 0x544c, 0x5049, 0x594c, "\000" 
+    instruc_SimKeyComBox, 0x403, 7, 0
+0x4944, 0x4956, 0x4544, "\000" 
+    instruc_SimKeyComBox, 0x403, 1, 0
+"\000" 
+    instruc_SimKeyComBox, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    monitor_HealthComBox, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0031, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0032, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0033, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0034, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0035, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0036, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0037, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0038, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0039, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0030, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0041, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0042, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0043, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0044, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0045, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0046, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0047, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0048, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0049, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x004a, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x004b, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x004c, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x004d, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x004e, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x004f, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0050, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0051, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0052, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0053, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0054, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0055, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0056, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0057, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0058, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x0059, 
+    monitor_HealthComBox, 0x403, 2, 0
+0x005a, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3146, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3246, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3346, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3446, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3546, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3646, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3746, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3846, "\000" 
+    monitor_HealthComBox, 0x403, 3, 0
+0x3946, "\000" 
+    monitor_HealthComBox, 0x403, 4, 0
+0x3146, 0x0030, 
+    monitor_HealthComBox, 0x403, 4, 0
+0x3146, 0x0031, 
+    monitor_HealthComBox, 0x403, 4, 0
+0x3146, 0x0032, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x5345, 0x4143, 0x4550, "\000" 
+    monitor_HealthComBox, 0x403, 4, 0
+0x4154, 0x0042, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 6, 0
+0x494d, 0x554e, 0x0053, 
+    monitor_HealthComBox, 0x403, 7, 0
+0x5145, 0x4155, 0x534c, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 5, 0
+0x4142, 0x4b43, "\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x4552, 0x5554, 0x4e52, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 9, 0
+0x424c, 0x4152, 0x4b43, 0x5445, "\000" 
+    monitor_HealthComBox, 0x403, 9, 0
+0x4252, 0x4152, 0x4b43, 0x5445, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 9, 0
+0x434c, 0x4e4f, 0x5254, 0x4c4f, "\000" 
+    monitor_HealthComBox, 0x403, 9, 0
+0x4352, 0x4e4f, 0x5254, 0x4c4f, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x534c, 0x4948, 0x5446, "\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x5352, 0x4948, 0x5446, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 5, 0
+0x414c, 0x544c, "\000" 
+    monitor_HealthComBox, 0x403, 5, 0
+0x4152, 0x544c, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 10, 0
+0x4553, 0x494d, 0x4f43, 0x4f4c, 0x004e, 
+    monitor_HealthComBox, 0x403, 11, 0
+0x5041, 0x534f, 0x5254, 0x504f, 0x4548, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 10, 0
+0x4142, 0x4b43, 0x4c53, 0x5341, 0x0048, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 6, 0
+0x4f43, 0x4d4d, 0x0041, 
+    monitor_HealthComBox, 0x403, 7, 0
+0x4550, 0x4952, 0x444f, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 6, 0
+0x5053, 0x4341, 0x0045, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 8, 0
+0x4143, 0x4950, 0x4154, 0x004c, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x4c4d, 0x434f, 0x004b, 
+    monitor_HealthComBox, 0x403, 7, 0
+0x4353, 0x4f52, 0x4c4c, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 5, 0
+0x454c, 0x5446, "\000" 
+    monitor_HealthComBox, 0x403, 6, 0
+0x4952, 0x4847, 0x0054, 
+    monitor_HealthComBox, 0x403, 3, 0
+0x5055, "\000" 
+    monitor_HealthComBox, 0x403, 5, 0
+0x4f44, 0x4e57, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 6, 0
+0x4150, 0x5355, 0x0045, 
+    monitor_HealthComBox, 0x403, 5, 0
+0x4f48, 0x454d, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x4e49, 0x4553, 0x5452, "\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x4544, 0x454c, 0x4554, "\000" 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0031, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0032, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0033, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0034, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0035, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0036, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0037, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0038, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0039, 
+    monitor_HealthComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0030, 
+    monitor_HealthComBox, 0x403, 1, 0
+"\000" 
+    monitor_HealthComBox, 0x403, 12, 0
+0x554e, 0x504d, 0x4441, 0x4e45, 0x4554, 0x0052, 
+    monitor_HealthComBox, 0x403, 13, 0
+0x554e, 0x504d, 0x4441, 0x5145, 0x4155, 0x534c, "\000" 
+    monitor_HealthComBox, 0x403, 8, 0
+0x4544, 0x4943, 0x414d, 0x004c, 
+    monitor_HealthComBox, 0x403, 4, 0
+0x4441, 0x0044, 
+    monitor_HealthComBox, 0x403, 9, 0
+0x5553, 0x5442, 0x4152, 0x5443, "\000" 
+    monitor_HealthComBox, 0x403, 9, 0
+0x554d, 0x544c, 0x5049, 0x594c, "\000" 
+    monitor_HealthComBox, 0x403, 7, 0
+0x4944, 0x4956, 0x4544, "\000" 
+    monitor_ManaComBox, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0031, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0032, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0033, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0034, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0035, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0036, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0037, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0038, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0039, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0030, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0041, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0042, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0043, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0044, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0045, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0046, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0047, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0048, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0049, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x004a, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x004b, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x004c, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x004d, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x004e, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x004f, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0050, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0051, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0052, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0053, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0054, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0055, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0056, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0057, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0058, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x0059, 
+    monitor_ManaComBox, 0x403, 2, 0
+0x005a, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3146, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3246, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3346, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3446, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3546, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3646, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3746, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3846, "\000" 
+    monitor_ManaComBox, 0x403, 3, 0
+0x3946, "\000" 
+    monitor_ManaComBox, 0x403, 4, 0
+0x3146, 0x0030, 
+    monitor_ManaComBox, 0x403, 4, 0
+0x3146, 0x0031, 
+    monitor_ManaComBox, 0x403, 4, 0
+0x3146, 0x0032, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x5345, 0x4143, 0x4550, "\000" 
+    monitor_ManaComBox, 0x403, 4, 0
+0x4154, 0x0042, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 6, 0
+0x494d, 0x554e, 0x0053, 
+    monitor_ManaComBox, 0x403, 7, 0
+0x5145, 0x4155, 0x534c, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 5, 0
+0x4142, 0x4b43, "\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x4552, 0x5554, 0x4e52, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 9, 0
+0x424c, 0x4152, 0x4b43, 0x5445, "\000" 
+    monitor_ManaComBox, 0x403, 9, 0
+0x4252, 0x4152, 0x4b43, 0x5445, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 9, 0
+0x434c, 0x4e4f, 0x5254, 0x4c4f, "\000" 
+    monitor_ManaComBox, 0x403, 9, 0
+0x4352, 0x4e4f, 0x5254, 0x4c4f, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x534c, 0x4948, 0x5446, "\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x5352, 0x4948, 0x5446, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 5, 0
+0x414c, 0x544c, "\000" 
+    monitor_ManaComBox, 0x403, 5, 0
+0x4152, 0x544c, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 10, 0
+0x4553, 0x494d, 0x4f43, 0x4f4c, 0x004e, 
+    monitor_ManaComBox, 0x403, 11, 0
+0x5041, 0x534f, 0x5254, 0x504f, 0x4548, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 10, 0
+0x4142, 0x4b43, 0x4c53, 0x5341, 0x0048, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 6, 0
+0x4f43, 0x4d4d, 0x0041, 
+    monitor_ManaComBox, 0x403, 7, 0
+0x4550, 0x4952, 0x444f, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 6, 0
+0x5053, 0x4341, 0x0045, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 8, 0
+0x4143, 0x4950, 0x4154, 0x004c, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x4c4d, 0x434f, 0x004b, 
+    monitor_ManaComBox, 0x403, 7, 0
+0x4353, 0x4f52, 0x4c4c, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 5, 0
+0x454c, 0x5446, "\000" 
+    monitor_ManaComBox, 0x403, 6, 0
+0x4952, 0x4847, 0x0054, 
+    monitor_ManaComBox, 0x403, 3, 0
+0x5055, "\000" 
+    monitor_ManaComBox, 0x403, 5, 0
+0x4f44, 0x4e57, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 6, 0
+0x4150, 0x5355, 0x0045, 
+    monitor_ManaComBox, 0x403, 5, 0
+0x4f48, 0x454d, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x4e49, 0x4553, 0x5452, "\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x4544, 0x454c, 0x4554, "\000" 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0031, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0032, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0033, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0034, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0035, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0036, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0037, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0038, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0039, 
+    monitor_ManaComBox, 0x403, 8, 0
+0x554e, 0x504d, 0x4441, 0x0030, 
+    monitor_ManaComBox, 0x403, 1, 0
+"\000" 
+    monitor_ManaComBox, 0x403, 12, 0
+0x554e, 0x504d, 0x4441, 0x4e45, 0x4554, 0x0052, 
+    monitor_ManaComBox, 0x403, 13, 0
+0x554e, 0x504d, 0x4441, 0x5145, 0x4155, 0x534c, "\000" 
+    monitor_ManaComBox, 0x403, 8, 0
+0x4544, 0x4943, 0x414d, 0x004c, 
+    monitor_ManaComBox, 0x403, 4, 0
+0x4441, 0x0044, 
+    monitor_ManaComBox, 0x403, 9, 0
+0x5553, 0x5442, 0x4152, 0x5443, "\000" 
+    monitor_ManaComBox, 0x403, 9, 0
+0x554d, 0x544c, 0x5049, 0x594c, "\000" 
+    monitor_ManaComBox, 0x403, 7, 0
+0x4944, 0x4956, 0x4544, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\transformer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,7 @@
+<config version="2">
+    <startStopKey>DIK_LALT</startStopKey>
+    <minID>1</minID>
+    <maxID>430</maxID>
+    <filePath>ItemImager Images</filePath>
+    <screenshotQuality>100</screenshotQuality>
+</config>

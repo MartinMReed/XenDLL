@@ -1,0 +1,11 @@
+LIBRARY HG_SDK
+
+EXPORTS
+	LostDevice @1
+	ResetDevice @2
+	PreRender @3
+	Render @4
+	HandleMouse @5
+	HandleKeyboard @6
+	Config @7
+	HGSDKVersionCheck @8

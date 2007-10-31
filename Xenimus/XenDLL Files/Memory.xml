@@ -1,0 +1,20 @@
+<config version="2">
+	<!-- <progressXP>45274140</progressXP> -->
+	<!-- <progressMP>45920324</progressMP> -->
+	<!-- <progressHP>47092220</progressHP> -->
+	<!-- <locationX>60043048</locationX> -->
+	<!-- <locationY>60043040</locationY> -->
+	<!-- <selfPID>47092224</selfPID> -->
+	<!-- <namePID>56540872</namePID> -->
+	<!-- <serverPID>12936092</serverPID> -->
+	<!-- <leftClickPID>57311568</leftClickPID> -->
+	<!-- <rightClickPID>57310192</rightClickPID> -->
+	<page>4827096</page> <!-- byte? 49a7d8 -->
+	<cursorX>7234984</cursorX> <!-- float 6e65a8 -->
+	<cursorY>7234988</cursorY> <!-- float 6e65ac -->
+	<dropSlotMouseOver>60044933</dropSlotMouseOver> <!-- word 3943685 -->
+	<dropSlotImage>12282224</dropSlotImage> <!-- word bb6970 -->
+	<mouseOverName>52586576</mouseOverName>
+	<mouseOverDescription>12265592</mouseOverDescription>
+	<descriptionLineCount>12288536</descriptionLineCount>
+</config>

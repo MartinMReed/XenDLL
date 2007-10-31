@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HG_SDK", "HG_SDK.vcproj", "{463F6062-5EC1-4ED0-8DD9-CF1C791608E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		SDK_Distribution|Win32 = SDK_Distribution|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{463F6062-5EC1-4ED0-8DD9-CF1C791608E5}.SDK_Distribution|Win32.ActiveCfg = SDK_Distribution|Win32
+		{463F6062-5EC1-4ED0-8DD9-CF1C791608E5}.SDK_Distribution|Win32.Build.0 = SDK_Distribution|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

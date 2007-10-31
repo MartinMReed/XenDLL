@@ -1,0 +1,20 @@
+<Config version="1">
+	<item name="Critical Body Low 0">0</item>
+	<item name="Critical Body High 0">3999</item>
+	<item name="Critical Body Low 1">4242</item>
+	<item name="Critical Body High 1">4242</item>
+	<item name="Critical Body Low 2">4422</item>
+	<item name="Critical Body High 2">*</item>
+	<item name="Critical Helmet Low 0">51</item>
+	<item name="Critical Helmet High 0">*</item>
+	<item name="Critical Weapon Low 0">682</item>
+	<item name="Critical Weapon High 0">*</item>
+	<item name="Critical Shield Low 0">51</item>
+	<item name="Critical Shield High 0">*</item>
+	<item name="MenuItemIO">true</item>
+	<item name="BodyID">4127</item>
+	<item name="HelmetID">19</item>
+	<item name="WeaponID">256</item>
+	<item name="ShieldID">0</item>
+	<item name="SpellID">0</item>
+</Config>

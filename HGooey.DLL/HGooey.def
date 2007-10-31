@@ -1,0 +1,182 @@
+LIBRARY HGooey
+
+EXPORTS
+	
+	_SetMenuOptions
+	_ToggleMenu
+	_Initialize
+	_HandleKeyboard
+	_HandleMouse
+	_EnableDraw
+	_EndScene
+	_LostDevice
+	_ResetDevice
+	
+	_HGVersionCheck
+	_D3DDevice
+	_Key
+	_Mouse
+	_FontWidth
+	_FontHeight
+	_ScreenWidth
+	_ScreenHeight
+	_ReadConfigItem
+	_WriteConfigItem
+	_CreateExtension
+	_UnloadExtension
+	_SetExtensionMenuItem
+	_CheckExtMenuIO
+	_SetExtMenuIO
+	_CreateImage
+	_CreateTextBar
+	_CreateTextOverImage
+	_CreateAreaSelection
+	_CreateListViewer
+	_CreateScrollBar
+	_CreateDefaultList
+	_CreateButton
+	_AttachObject1
+	_AttachObject2
+	_CreateIDDTextureFromFile
+	_CreateIDDTexture
+	_ActivateFull1
+	_ActivateFull2
+	_DrawText
+	
+	_W2X
+	_H2Y
+	_X2W
+	_Y2H
+	_restring
+	_convertDIK_Name
+	_convertDIK_KeyText
+	_convertDIK_Key
+	
+	IDDTexture_GetWidth
+	IDDTexture_GetHeight
+	
+	_SetRemoteAction
+	_SetStickyIO
+	_GetStickyIO
+	_SetIO
+	_GetIO
+	_SetActive
+	_GetActive
+	_SetCancelClick
+	_GetCancelClick
+	_SetAcceptAction
+	_GetAcceptAction
+	_SetMoveable
+	_GetMoveable
+	_GetX
+	_GetY
+	_GetWidth
+	_GetHeight
+	_Move
+	
+	_ResetRect
+	_SetTexture
+	_ReScale
+	_GetWidthScale
+	_GetHeightScale
+	
+	_SetText
+	_SetBorderWidth
+	_SetBorderHeight
+	
+	_SetAutoScroll
+	_GetAutoScroll
+	_LoadString
+	_UnloadString
+	_UnloadStringAt
+	_ContainsString
+	_GetSelected
+	_UnSelect
+	_SetStringAt
+	_StringAt
+	_Empty
+	_ReScaleByLines
+	
+	_isOpen
+	
+	_GetListViewer
+	_GetButtonOK
+	_GetButtonCancel
+	
+	_SetTextColor
+	_GetTextColor
+	
+	_SetIdleColor
+	_GetIdleColor
+	_SetActiveColor
+	_GetActiveColor
+
+	ListViewer_left
+	ListViewer_top
+	ListViewer_right
+	ListViewer_bottom
+	ListViewer_width
+	ListViewer_height
+
+	DefaultList_left
+	DefaultList_top
+	DefaultList_right
+	DefaultList_bottom
+	DefaultList_width
+	DefaultList_height
+
+	TextBar_left
+	TextBar_top
+	TextBar_right
+	TextBar_bottom
+	TextBar_width
+	TextBar_height
+
+	HSB_LI_left
+	HSB_LI_top
+	HSB_LI_right
+	HSB_LI_bottom
+	HSB_LI_width
+	HSB_LI_height
+
+	HSB_RI_left
+	HSB_RI_top
+	HSB_RI_right
+	HSB_RI_bottom
+	HSB_RI_width
+	HSB_RI_height
+
+	HSB_MI_left
+	HSB_MI_top
+	HSB_MI_right
+	HSB_MI_bottom
+	HSB_MI_width
+	HSB_MI_height
+
+	VSB_UI_left
+	VSB_UI_top
+	VSB_UI_right
+	VSB_UI_bottom
+	VSB_UI_width
+	VSB_UI_height
+
+	VSB_DI_left
+	VSB_DI_top
+	VSB_DI_right
+	VSB_DI_bottom
+	VSB_DI_width
+	VSB_DI_height
+
+	VSB_MI_left
+	VSB_MI_top
+	VSB_MI_right
+	VSB_MI_bottom
+	VSB_MI_width
+	VSB_MI_height
+
+	Button_left
+	Button_top
+	Button_right
+	Button_bottom
+	Button_width
+	Button_height
